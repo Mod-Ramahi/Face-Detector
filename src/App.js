@@ -14,10 +14,10 @@ function App() {
   const [urlInput, setUrlInput] = useState("https://samples.clarifai.com/metro-north.jpg");
   const [box, setBox] = useState({});
   const [user, setUser] = useState({id:'',name:'', email:'',entries:0, joined:''})
-    // useEffect(() => {
-    //   fetch('http://localhost:3000/').then(response => response.json())
-    //   .then(data => {console.log(data)})
-    // }, [])
+    useEffect(() => {
+      fetch('https://mybackendface.onrender.com/').then(response => response.json())
+      .then(data => {console.log(data)})
+    }, [])
 
   const handleInputUrl = (event) => {
     const e = (event.target.value);
@@ -48,7 +48,7 @@ function App() {
       .then(response => response.json())
       .then(result => {
         BoxShape(CalculateTheFace(result))
-        fetch('http://localhost:3000/image' , {
+        fetch('https://mybackendface.onrender.com/image' , {
           method:'put',
           headers:{'Content-Type':'application/json'},
           body:JSON.stringify({
