@@ -1,0 +1,17 @@
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar p{
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+    padding: 1rem 2rem;
+    color: azure;
+}
+
+.navbar p:hover{
+    color: rgb(176, 176, 176);
+}

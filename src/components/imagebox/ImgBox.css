@@ -1,0 +1,28 @@
+.boximage{
+    display: flex;
+    padding: 10px;
+    position: relative;
+    max-width: 600px;
+    max-height: 500px;
+    justify-content:center ;
+    transform: translateX(75%);
+}
+
+img{
+    width: 100%;
+    height: auto;
+    border: 3px solid black;
+}
+.bounding_box{
+    position: absolute;
+    box-shadow: 0 0 0 3px yellow inset;
+    /* display: -webkit-box; */
+    /* display: -ms-flexbox; */
+    display: flex;
+    /* -ms-flex-wrap: wrap; */
+    flex-wrap: wrap;
+    /* -webkit-box-pack: center; */
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+}

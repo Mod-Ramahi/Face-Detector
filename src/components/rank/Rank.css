@@ -1,0 +1,8 @@
+.rank{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
